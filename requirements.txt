@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+bcrypt
+passlib
+pyjwt
+pymongo
+redis
+requests
+stripe
+resend
+boto3
+Pillow
+python-multipart
