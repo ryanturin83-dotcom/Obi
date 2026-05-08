@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "obi-x7j2la"
+mapp = "obi-x7j2la"
 primary_region = "lhr"
 
 [http_service]
@@ -13,6 +13,9 @@ primary_region = "lhr"
   auto_stop_machines = false
   min_machines_running = 1
   processes = ["app"]
+
+[processes]
+  app = "uvicorn server:app --host 0.0.0.0 --port 8000"
 
 [[vm]]
   cpu_kind = "shared"
